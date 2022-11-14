@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#ddc4ab, #b5d1a0);
+    font-family: 'Philosopher', sans-serif;
+    overscroll-behavior: none;
+    color: #374450;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#background {
+    opacity: 0.20;
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+}
+
+#cursor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #212a33;
+    box-sizing: border-box;
+    transition: 0.025s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.head {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.logo {
+    color: #212a33;
+    font-size: 50px;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.menu1 {
+    margin-left: 35px;
+    color: #212a33;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.menu2 {
+    margin-right: 0;
+    color: #212a33;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.menu1 a:link,
+.menu2 a:link {
+    color: #212a33;
+    text-decoration: none;
+}
+
+.menu1 a:visited,
+.menu2 a:visited {
+    color: #212a33;
+    text-decoration: none;
+}
+
+.menu1 a:hover,
+.menu2 a:hover {
+    color: #212a33;
+    text-decoration: none;
+}
+
+.menu1 a:active,
+.menu2 a:active {
+    color: #212a33;
+    text-decoration: none;
+}
+
+/* .search-box{
+    position: relative;
+    color: #212a33;
+    z-index: 100;
+}
+
+.search-btn {
+    color: #212a33;
+    float: right;
+    border-radius: 50%;
+}
+
+.search-txt {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:#212a33;
+} */
+
+#line {
+    margin-top: 15.2vh;
+}
+
+.foot {
+    height: 10vh;
+    width: 100%;
+    margin-top: 89.3vh;
+    position: fixed;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-left: 41.8vw;
+}
+
+.base {
+    color: #212a33;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2800px;
+    height: 100%;
+    z-index: 10;
+}
+
+.slider-inner {
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.item {
+    position: relative;
+    width: 395px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.img {
+    position: absolute;
+    left: -100px;
+    width: 600px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#embroidery:hover .overlay {
+    opacity: 0.7;
+    background-color: #444031d2;
+}
+
+#paintings:hover .overlay {
+    opacity: 0.7;
+    background-color: #2a4151ce;
+}
+
+#pottery:hover .overlay {
+    opacity: 0.7;
+    background-color: #454b53d0;
+}
+
+#mirrors:hover .overlay {
+    opacity: 0.7;
+    background-color: #643018c3;
+}
+
+#candles:hover .overlay {
+    opacity: 0.7;
+    background-color: #374450d8;
+}
+
+#clocks:hover .overlay {
+    opacity: 0.7;
+    background-color: #101010d1;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 400;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
