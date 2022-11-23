@@ -1,0 +1,10 @@
+Files for login are :
+config.php:
+configure the database password if you are using xampp use the same file if error is thrown contact Parth
+the other files are as follows:
+	login.php
+	logout.php
+	register.php
+	style.css(for register.php)
+	styleLogin.css(for login.php)
+	welcome.php
