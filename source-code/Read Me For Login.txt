@@ -8,3 +8,4 @@ the other files are as follows:
 	style.css(for register.php)
 	styleLogin.css(for login.php)
 	welcome.php
+	ignore
