@@ -1,6 +1,4 @@
-# luna-engine
-fsd, dbms - aesthetic website :)
-
+# fsd
 # connections/links:
 Homepage to search-page, index1-6, forms
 | Search-page to individual-product-pages(via database)
